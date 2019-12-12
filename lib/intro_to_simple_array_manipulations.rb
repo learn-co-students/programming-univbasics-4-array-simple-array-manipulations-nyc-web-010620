@@ -79,17 +79,17 @@ def using_push( colors_in_the_rainbow,next_color)
              flat_array=nstruments.flatten
          return flat_array   
        end
-       def using_delete(instructors, s)
+       def using_delete(array,element )
          #instructors = ["Josh", "Steven", "Sophie", "Steven", "Amanda", "Steven"]
-        binding.pry
-        instructors.delete(s)   
+        #binding.pry
+        array.delete(element)   
            
           
         end
         
         def using_delete_at(famous_robots,x)
-          famous_robots = ["Johnny 5", "R2D2", "Robocop"]
-         deleted_robot = famous_robots.delete_at(2) 
+          #famous_robots = ["Johnny 5", "R2D2", "Robocop"]
+         deleted_robot = famous_robots.delete_at(x) 
          return deleted_robot
        end
        
