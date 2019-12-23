@@ -24,23 +24,15 @@ def shift_with_args(array)
 end 
 
 def using_concat(arr1, arr2)
-  arr1 += arr2
+  arr1.concat(arr2)
 end 
 
 def using_insert(array, element) 
-  array.push(element)
+  array.insert(4, element)
 end
 
-def using_uniq(array)  // [1, 2, 1, 3, 2]
-  new_array = []
-  
-  array.each do |ele| 
-    if !new_array.include?(ele) 
-      new_array << ele
-    end
-  end 
-  
-  return new_array
+def using_uniq(array)  
+  array.uniq
 end 
 
 def using_delete(array, string)
@@ -52,16 +44,5 @@ def using_delete_at(array, idx)
 end
 
 def using_flatten(array)
-  new_array = []
-  array.each do |ele|
-    if isArray?(ele)
-      ele.each do |el|
-        new_array << el
-      end 
-      else 
-        new_array << ele
-      end 
-    end 
-        
-  return new_array
+  array.flatten
 end
